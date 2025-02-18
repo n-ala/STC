@@ -120,7 +120,7 @@ const server = http.createServer((req, res) => {
        // Handle GET /api/shipments/:id 
        else if(parsedUrl.pathname.startsWith('/api/shipments/') && req.method === 'GET'){
            console.log(parsedUrl.pathname)
-           const id = parseInt(parsedUrl.pathname.split('/')[2]); 
+           const id = parseInt(parsedUrl.pathname.split('/')[3]); 
 
            const foundShipment=shipments.find(s=>parseInt(s.id)===parseInt(id));
 
