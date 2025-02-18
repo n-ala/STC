@@ -1,24 +1,52 @@
 const http = require('http');
 const url = require('url');
 
-// Sample data for shipments with lat/long
 let shipments = [
     {
-        id: 1125444,
+        id: 1156866,
         customerName: "John Doe",
         shipmentId: "SHIP12345",
-        billingAddress: "123 Main St.",
-        shippingAddress: "456 Elm St.",
+        billingAddress: "123 Main St., Riyadh",
+        shippingAddress: "456 Elm St., Jeddah",
         location: {
-            latitude: 37.7749,
-            longitude: -122.4194
+            latitude: 24.774265,
+            longitude: 46.738586 
         },
         items: [
-            { description: "Product A", quantity: 5, unitPrice: "$10" },
-            { description: "Product B", quantity: 3, unitPrice: "$20" }
+            { description: "Speaker", quantity: 1, unitPrice: "520 SAR" },
+            { description: "Screen", quantity: 2, unitPrice: "2240 SAR" }
         ]
-    }
+    },
+    {
+        id: 1156867,
+        customerName:"Ahmed Al-Khateeb",
+         shipmentId:"SHIP67890",
+         billingAddress:"789 King Fahd Rd., Dammam",
+         shippingAddress:"321 Prince Sultan Rd., Mecca",
+         location:{
+             latitude :21.4858 , 
+             longitude :39.1987 
+          },
+          items:[
+              {description :"Iphone 16",quantity :1 ,unitPrice :"3699 SAR"}
+           ]
+     },
+     {
+       id :1156868 ,
+       customerName :"Mohammed Al-Saud",
+       shipmentId :"SHIP11111",
+       billingAddress :"901 Corniche Rd., Jeddah",
+       shippingAddress :"234 Umar Ibn Abdul Aziz Rd., Medina",
+       location:{
+           latitude :24.4667 , 
+           longitude :39.5833  
+      } ,
+      items:[
+          {description:"TV",quantity :1 ,unitPrice:"2900 SAR"}
+      ]
+   }
 ];
+
 
 // Function to generate unique ID
 function generateId() {
