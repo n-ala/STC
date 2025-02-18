@@ -15,37 +15,44 @@ let shipments = [
         items: [
             { description: "Speaker", quantity: 1, unitPrice: "520 SAR" },
             { description: "Screen", quantity: 2, unitPrice: "2240 SAR" }
-        ]
+        ],
+        status:"In Transit",
+         expectedArrival:"2024-02-25"
     },
     {
-        id: 1156867,
-        customerName:"Ahmed Al-Khateeb",
-         shipmentId:"SHIP67890",
-         billingAddress:"789 King Fahd Rd., Dammam",
-         shippingAddress:"321 Prince Sultan Rd., Mecca",
-         location:{
-             latitude :21.4858 , 
-             longitude :39.1987 
-          },
+       id :1156867 ,
+       customerName :"Ahmed Al-Khateeb",
+       shipmentId :"SHIP67890",
+       billingAddress :"789 King Fahd Rd., Dammam",
+       shippingAddress :"321 Prince Sultan Rd., Mecca",
+       location :{
+           latitude :21.4858 , 
+           longitude :39.1987  
+          } ,
           items:[
-              {description :"Iphone 16",quantity :1 ,unitPrice :"3699 SAR"}
-           ]
+              {description:"Iphone 16",quantity :1 ,unitPrice:"3699 SAR"}
+           ] ,
+           status:"Delivered",
+           expectedArrival:null 
      },
      {
-       id :1156868 ,
-       customerName :"Mohammed Al-Saud",
-       shipmentId :"SHIP11111",
-       billingAddress :"901 Corniche Rd., Jeddah",
-       shippingAddress :"234 Umar Ibn Abdul Aziz Rd., Medina",
-       location:{
-           latitude :24.4667 , 
-           longitude :39.5833  
-      } ,
-      items:[
-          {description:"TV",quantity :1 ,unitPrice:"2900 SAR"}
-      ]
-   }
+         id :1156868 ,
+         customerName :"Mohammed Al-Saud",
+         shipmentId :"SHIP11111",
+         billingAddress :"901 Corniche Rd., Jeddah",
+         shippingAddress :"234 Umar Ibn Abdul Aziz Rd., Medina",
+         location:{
+             latitude :24.4667 , 
+             longitude :39.5833  
+          } ,
+          items:[
+              {description:"TV",quantity :1 ,unitPrice:"2900 SAR"}
+          ] ,
+          status:"Pending Pickup",
+          expectedArrival:"2024-03-01"
+      }
 ];
+
 
 
 // Function to generate unique ID
