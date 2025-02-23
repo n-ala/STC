@@ -8,6 +8,7 @@ let shipments = [
         shipmentId: "SHIP12345",
         billingAddress: "123 Main St., Riyadh",
         shippingAddress: "456 Elm St., Jeddah",
+        shippingAddress: "456 شارع العلم، جدة",
         location: {
             latitude: 24.774265,
             longitude: 46.738586 
@@ -17,6 +18,7 @@ let shipments = [
             { description: "Screen", quantity: 2, unitPrice: "2240 SAR" }
         ],
         status:"In Transit",
+        statusAr:"قيد العبور",
          expectedArrival:"2024-02-25"
     },
     {
@@ -25,6 +27,7 @@ let shipments = [
        shipmentId :"SHIP67890",
        billingAddress :"789 King Fahd Rd., Dammam",
        shippingAddress :"321 Prince Sultan Rd., Mecca",
+       shippingAddressAr:"321 طريق الأمير سلطان، مكة المكرمة",
        location :{
            latitude :21.4858 , 
            longitude :39.1987  
@@ -33,6 +36,7 @@ let shipments = [
               {description:"Iphone 16",quantity :1 ,unitPrice:"3699 SAR"}
            ] ,
            status:"Delivered",
+           statusAr:"تم التوصيل",
            expectedArrival:null 
      },
      {
@@ -41,6 +45,7 @@ let shipments = [
          shipmentId :"SHIP11111",
          billingAddress :"901 Corniche Rd., Jeddah",
          shippingAddress :"234 Umar Ibn Abdul Aziz Rd., Medina",
+         shippingAddressAr:"234 طريق عمر بن عبد العزيز، المدينة المنورة",
          location:{
              latitude :24.4667 , 
              longitude :39.5833  
@@ -49,6 +54,7 @@ let shipments = [
               {description:"TV",quantity :1 ,unitPrice:"2900 SAR"}
           ] ,
           status:"Pending Pickup",
+          statusAr:"قيد الاستلام",
           expectedArrival:"2024-03-01"
       }
 ];
