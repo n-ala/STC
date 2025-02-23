@@ -8,7 +8,7 @@ let shipments = [
         shipmentId: "SHIP12345",
         billingAddress: "123 Main St., Riyadh",
         shippingAddress: "456 Elm St., Jeddah",
-        shippingAddress: "456 شارع العلم، جدة",
+        shippingAddressAr: "456 شارع العلم، جدة",
         location: {
             latitude: 24.774265,
             longitude: 46.738586 
